@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttendSmart - Simplify Attendance Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <span class="navbar-brand" href="#">AttendSmart</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-success" href="YOUR_DOWNLOAD_LINK_HERE">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to AttendSmart</h1>
+            <p class="lead">Simplify Your Attendance Management Today</p>
+            <a href="YOUR_DOWNLOAD_LINK_HERE" class="btn btn-lg btn-light mt-3">Download Now</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose AttendSmart?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-building fs-1 text-primary"></i>
+                    <h4 class="mt-3">Customization to Fit Your Needs</h4>
+                    <p>Personalize attendance sheets with your university's information.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-file-earmark-text fs-1 text-success"></i>
+                    <h4 class="mt-3">User Friendly Interface</h4>
+                    <p>AttendSmart features an intuitive, user-friendly interface that lets you generate attendance sheets with no technical expertise required.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-calendar-check fs-1 text-danger"></i>
+                    <h4 class="mt-3">Automated Attendance</h4>
+                    <p>Generate Excel sheets with lecture dates and attendance placeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">How It Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/Ui.png') }}" alt="How It Works" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Set up university details.</li>
+                        <li class="list-group-item">Upload student data in `.txt` format.</li>
+                        <li class="list-group-item">Select lecture days and date range.</li>
+                        <li class="list-group-item">Generate and save the Excel attendance sheet.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- How to Create a .txt File Section -->
+    <section id="create-txt" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">How to Create a .txt File</h2>
+            <p class="text-center">Follow these simple steps to create a `.txt` file with your attendance data:</p>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Open any text editor (e.g., Notepad on Windows, TextEdit on Mac).</li>
+                        <li class="list-group-item">Write the Registration No. then hit "Tab key" and Write the Student Name.<br>Note: <strong>These headings are necessary to add.</strong></li>
+                        <li class="list-group-item">Enter the attendance data in the format: <code>"2022-ME-521"  Name_of_Student</code>.<br>Note: <strong>Don't forget to add a Tab space between the Reg. No. and the Name.</strong></li>
+                        <li class="list-group-item">Click on "File" > "Save As".</li>
+                        <li class="list-group-item">Choose "All Files" for the file type and name the file with a `.txt` extension (e.g., <strong>attendance.txt</strong>).</li>
+                        <li class="list-group-item">Click "Save" and your file is ready!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <p class="text-center">Have questions or feedback? Contact us at <a href="mailto:support@attendsmart.com">support@attendsmart.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 AttendSmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
